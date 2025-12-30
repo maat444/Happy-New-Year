@@ -18,7 +18,7 @@
         }
 
         body {
-            background-color: #0a0a1a;
+            background-color: #0f0f3d;
             color: #fff;
             font-family: 'Arial', sans-serif;
             overflow: hidden;
@@ -38,7 +38,7 @@
             position: relative;
             padding: 30px 20px;
             max-width: 90%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(57, 131, 243, 0.6);
             border-radius: 20px;
             box-shadow:
                 0 0 40px rgba(255, 0, 128, 0.4),
@@ -66,7 +66,7 @@
                 0 0 80px #ff0080,
                 0 0 100px #ff0080,
                 0 0 150px #ff0080;
-            animation: neon-flicker 2s infinite alternate;
+            animation: neon-flicker 4s infinite alternate;
             position: relative;
         }
 
@@ -86,7 +86,7 @@
                 0 0 40px #00ccff,
                 0 0 50px #00ccff,
                 0 0 75px #00ccff;
-            animation: neon-flicker-blue 1.5s infinite alternate;
+            animation: neon-flicker-blue 4.5s infinite alternate;
             position: relative;
             padding: 0 10px;
         }
@@ -100,9 +100,9 @@
             z-index: 99;
             text-align: center;
             padding: 15px 20px;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(25, 18, 90, 0.4);
             border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(152, 240, 240, 0.829);
             box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
             backdrop-filter: blur(5px);
             max-width: 90%;
@@ -154,7 +154,7 @@
         }
 
         .share-button {
-            background: linear-gradient(135deg, #ff0080, #00ccff);
+            background: linear-gradient(135deg, #932ba862, #c357f5);
             border: none;
             border-radius: 50px;
             color: white;
@@ -179,8 +179,8 @@
         .share-button:hover {
             transform: scale(1.05);
             box-shadow:
-                0 0 15px rgba(255, 0, 128, 0.6),
-                0 0 25px rgba(0, 204, 255, 0.4);
+                0 0 15px rgba(150, 84, 117, 0.6),
+                0 0 25px rgba(124, 204, 224, 0.4);
         }
 
         .share-button:active {
@@ -210,7 +210,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
+            background-color: rgba(31, 15, 87, 0.212);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -226,7 +226,7 @@
         }
 
         .modal {
-            background: rgba(10, 10, 26, 0.95);
+            background: rgba(4, 4, 121, 0.95);
             border-radius: 20px;
             padding: 25px;
             max-width: 90%;
@@ -264,8 +264,8 @@
         }
 
         .modal-url {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(58, 143, 177, 0.5);
+            border: 1px solid rgba(50, 24, 110, 0.459);
             border-radius: 10px;
             padding: 10px;
             margin: 15px 0;
@@ -387,7 +387,7 @@
         .flash {
             position: absolute;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(32, 4, 68, 0.24) 70%);
             animation: flash-appear 0.8s ease-out forwards;
             z-index: 2;
         }
@@ -753,7 +753,7 @@
         // Inicializar efectos
         function initEffects() {
             for (let i = 0; i < 5; i++) {
-                setTimeout(createFlash, i * 300);
+                setTimeout(createFlash, i * 900);
             }
 
             for (let i = 0; i < 30; i++) {
